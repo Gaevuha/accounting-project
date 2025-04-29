@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "gaevuha",
+    "password": "Gae$uha1979",
+    "database": "military_db",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "gaevuha",
+    "password": "Gae$uha1979",
+    "database": "military_db",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "gaevuha",
+    "password": "Gae$uha1979",
+    "database": "military_db",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Форма для військового обліку</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>Форма для введення даних військового обліку</h1>
+    <form id="militaryForm">
+      <!-- 1. Порядковий номер -->
+      <label for="orderNumber">1. Порядковий номер:</label>
+      <input
+        type="text"
+        id="orderNumber"
+        name="orderNumber"
+        required
+      /><br /><br />
+
+      <!-- 2. Військове звання -->
+      <label for="rank">2. Військове звання:</label>
+      <input type="text" id="rank" name="rank" required /><br /><br />
+
+      <!-- 3. Прізвище, ім'я та по батькові -->
+      <label for="fullName"
+        >3. Прізвище, власне ім'я та по батькові (за наявності):</label
+      >
+      <input type="text" id="fullName" name="fullName" required /><br /><br />
+
+      <!-- 4. Дата народження -->
+      <label for="dob">4. Число, місяць, рік народження:</label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
+
+      <!-- 5. Реєстраційний номер -->
+      <label for="registrationNumber"
+        >5. Реєстраційний номер в ЄДР призовників/податковий номер:</label
+      >
+      <input
+        type="text"
+        id="registrationNumber"
+        name="registrationNumber"
+        required
+      /><br /><br />
+
+      <!-- 6. Військовооблікова спеціальність -->
+      <label for="specialty">6. Військовооблікова спеціальність:</label>
+      <input type="text" id="specialty" name="specialty" required /><br /><br />
+
+      <!-- 7. Склад (профіль підготовки) -->
+      <label for="corps">7. Склад (профіль підготовки - для офіцера):</label>
+      <input type="text" id="corps" name="corps" /><br /><br />
+
+      <!-- 8. Категорія обліку -->
+      <label for="accountingCategory"
+        >8. Категорія обліку (для офіцерів розряд), військовообліковий документ
+        (серія, номер):</label
+      >
+      <input
+        type="text"
+        id="accountingCategory"
+        name="accountingCategory"
+      /><br /><br />
+
+      <!-- 9. Відомості про освіту -->
+      <label for="education"
+        >9. Відомості про освіту та спеціальність (серія та номер диплома,
+        свідоцтва, сертифіката тощо):</label
+      >
+      <input type="text" id="education" name="education" /><br /><br />
+
+      <!-- 10. Реквізити паспорта -->
+      <label for="passportDetails"
+        >10. Реквізити паспорта громадянина України та паспорта для виїзду за
+        кордон (серія (за наявності) номер, ким та коли видано):</label
+      >
+      <input
+        type="text"
+        id="passportDetails"
+        name="passportDetails"
+      /><br /><br />
+
+      <!-- 11. Адреса задекларованого місця проживання -->
+      <label for="registeredAddress"
+        >11. Адреса задекларованого (зареєстрованого) місця проживання:</label
+      >
+      <input
+        type="text"
+        id="registeredAddress"
+        name="registeredAddress"
+      /><br /><br />
+
+      <!-- 12. Адреса фактичного місця проживання -->
+      <label for="actualAddress">12. Адреса фактичного місця проживання:</label>
+      <input type="text" id="actualAddress" name="actualAddress" /><br /><br />
+
+      <!-- 13. Назва територіального центру комплектування -->
+      <label for="militaryOffice"
+        >13. Найменування ТЦК, органу СБУ, підрозділу СЗР, де перебуває на
+        військовому обліку:</label
+      >
+      <input
+        type="text"
+        id="militaryOffice"
+        name="militaryOffice"
+      /><br /><br />
+
+      <!-- 14. Перебування на спеціальному обліку -->
+      <label for="specialRegister"
+        >14. Перебування на спеціальному обліку або номер команди / служба у
+        військовому резерві:</label
+      >
+      <input
+        type="text"
+        id="specialRegister"
+        name="specialRegister"
+      /><br /><br />
+
+      <!-- 15. Придатність до військової служби -->
+      <label for="fitnessForService"
+        >15. Придатність до військової служби:</label
+      >
+      <input
+        type="text"
+        id="fitnessForService"
+        name="fitnessForService"
+      /><br /><br />
+
+      <!-- 16. Сімейний стан і члени сім'ї -->
+      <label for="familyStatus"
+        >16. Сімейний стан, ПІБ членів сім'ї та рік їх народження:</label
+      >
+      <input type="text" id="familyStatus" name="familyStatus" /><br /><br />
+
+      <!-- 17. Посада та акт про призначення/звільнення -->
+      <label for="positionAct"
+        >17. Посада, реквізити акта про призначення/звільнення на посаду/з
+        посади:</label
+      >
+      <input type="text" id="positionAct" name="positionAct" /><br /><br />
+
+      <!-- 18. Реквізити повідомлення про призначення/звільнення -->
+      <label for="notificationDetails"
+        >18. Реквізити повідомлення про призначення/звільнення на посаду/з
+        посади:</label
+      >
+      <input
+        type="text"
+        id="notificationDetails"
+        name="notificationDetails"
+      /><br /><br />
+
+      <button type="submit">Зберегти дані</button>
+    </form>
+
+    <!-- <ul id="recordsList"></ul> -->
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

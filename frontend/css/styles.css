@@ -1,0 +1,39 @@
+/* Це дуже базовий стиль, можна додати більше */
+body {
+    font-family: Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.title-login-form {
+    text-align: center;
+}
+#loginForm {
+    width: 400px;
+}
+
+form {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+label {
+font-size: 24px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin: 0 auto;
+}
